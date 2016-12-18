@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sum the Numbers</title>
+   	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 	
+   	<script>
+        do{
+        alert("Sum the Numbers from 1 through entry");
+        var numberTop = prompt("Enter top number to sum", 5);
+        numberTop = parseInt(numberTop);
+        if(isNaN(numberTop) || numberTop < 1 || numberTop > 100){
+        	alert("Top number must be greater than zero and less than 100.");
+        }
+        }
+        while (isNaN(numberTop) || numberTop < 1 || numberTop > 100);
+        
+        var sum = 0;
+        for (i = 1;i <= numberTop; i++){
+        	sum += i;
+        }
+        alert("Sum of numbers from 1 through " + numberTop + " = " + sum);
+    </script>
+</head>
+<body>
+    <section>
+        <h1>This page is displayed after the JavaScript is executed</h1>
+    </section>
+</body>
+</html>
